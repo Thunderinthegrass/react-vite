@@ -1,7 +1,9 @@
-import MyName from '../Myname/MyName'
+import { Email } from '../Email'
+import MyName from '../MyName/MyName'
 import './App.css'
 
 function App() {
+  const condition = true;
 
   return (
     <>
@@ -10,9 +12,11 @@ function App() {
           Привет
         </h1>
         <MyName />
+        <Email />
         <p>
           Первый проект на React с Vite
         </p>
+        {condition && <span>Погнали</span>}
       </div>
     </>
   )
