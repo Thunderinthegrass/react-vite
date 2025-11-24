@@ -1,9 +1,14 @@
-import "./Header.css";
+import { NavLink } from "react-router-dom";
+import styles from "./Header.module.scss";
+import ClassComponent from "../ClassComponent";
 
 function Header() {
   return (
-    <header className="header">
-      <h1>Заголовок</h1>
+    <header className={styles.header}>
+      <ul>
+        <li><NavLink to={'/'}>Главная</NavLink></li>
+        <li><NavLink to={'classComponent'}>Классовый компонент</NavLink></li>
+      </ul>
     </header>
   )
 }

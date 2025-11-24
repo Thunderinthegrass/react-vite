@@ -1,0 +1,17 @@
+.header{
+  background: #e1e6fd;
+  background: #212227;
+  padding: 30px 0;
+  ul{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  a{
+    color: #ffffff;
+      &.active{
+      color: #24d414;
+    }
+  }
+}

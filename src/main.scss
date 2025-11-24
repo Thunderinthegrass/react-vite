@@ -1,0 +1,35 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  // &.active{
+  //   color: #24d414;
+  // }
+}
+button{
+  background: #e8e2e9;
+  color: #61096b;
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: 3px solid #61096b;
+  transition: .2s;
+  cursor: pointer;
+  &:hover{
+    background: #61096b;
+    color: #ffffff;
+  }
+  &:active{
+    background: #b622c7;
+    color: #ffffff;
+  }
+}
+input{
+  border: 1px solid #23a1a5;
+}

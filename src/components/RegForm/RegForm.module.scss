@@ -1,0 +1,96 @@
+.regForm{
+  flex: 1;
+  background: #BBDCE5;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input{
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+input:focus {
+  outline: none;
+  background: #d4eeee;
+}
+.button{
+  background: #E43636;
+  border: none;
+  padding: 10px 27px;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  &:hover{
+    background: #cf1515;
+  }
+  &:active{
+    background: #ec1818;
+  }
+}
+p{
+  color: #cf1515;
+}
+select {
+  width: 100%;
+  padding: 10px 45px 10px 10px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 14px;
+  color: #2d3748;
+  cursor: pointer;
+  appearance: none; /* Убираем стандартную стрелку */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23666'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 16px;
+  transition: all 0.3s ease;
+  
+  &:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+  }
+  
+  &:hover {
+    border-color: #cbd5e0;
+  }
+}
+option {
+  padding: 12px;
+  background-color: white;
+  color: #2d3748;
+  font-size: 14px;
+  
+  &:hover {
+    background-color: #4299e1;
+    color: white;
+  }
+  
+  &:checked {
+    background-color: #4299e1;
+    color: white;
+  }
+}
+.successMessage{
+  color: #2bcf15;
+}
+.success{
+  border: 1px solid #2bcf15;
+}
+.error{
+  border: 1px solid #cf1515;
+}
