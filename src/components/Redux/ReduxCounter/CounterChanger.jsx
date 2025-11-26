@@ -1,24 +1,21 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from '../../../state/counterSlice';
-import CounterUser from './CounterUser';
-import CounterChanger from './CounterChanger';
 
-const ReduxCounter = () => {
+const CounterChanger = () => {
 
   const count = useSelector((state) => state.counter?.count ?? 0);
   const dispatch = useDispatch();
-  
+
   return (
     <div>
-      <h2>ReduxCounter</h2>
-      <h3>Счётчик: {count}</h3>
+      <h2>CounterChanger</h2>
+      <h3>Третий счётчик: {count}</h3>
       <button onClick={() => dispatch(increment())}>+</button>
       <button onClick={() => dispatch(decrement())}>-</button>
-      <CounterUser />
-      <CounterChanger />
     </div>
+    
   )
 }
 
-export default ReduxCounter
+export default CounterChanger;
