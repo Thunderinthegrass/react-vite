@@ -1,21 +1,9 @@
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { increment, decrement } from '../../../state/counterSlice';
+import React from 'react'
 
 const CounterChanger = () => {
-
-  const count = useSelector((state) => state.counter?.count ?? 0);
-  const dispatch = useDispatch();
-
   return (
-    <div>
-      <h2>CounterChanger</h2>
-      <h3>Третий счётчик: {count}</h3>
-      <button onClick={() => dispatch(increment())}>+</button>
-      <button onClick={() => dispatch(decrement())}>-</button>
-    </div>
-    
+    <div>CounterChanger</div>
   )
 }
 
-export default CounterChanger;
+export default CounterChanger
