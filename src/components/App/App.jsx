@@ -20,6 +20,8 @@ import UseRefName from '../UseRef/UseRefName/UseRefName'
 import CustomVideoPlayer from '../UseRef/CustomVideoPlayer/CustomVideoPlayer'
 import UseMemo from '../UseMemo/UseMemo'
 import ReduxCounter from '../Redux/ReduxCounter/ReduxCounter'
+import TodoWithoutRedux from '../Redux/TodoWithoutRedux/TodoWithoutRedux'
+import TodoWithRedux from '../Redux/TodoWithRedux/TodoWithRedux'
 
 function App() {
   const [isDark, setIsDark] = useState(false);
@@ -42,6 +44,8 @@ function App() {
           <Route path='CustomVideoPlayer' element={<CustomVideoPlayer />} />
           <Route path='UseMemo' element={<UseMemo />} />
           <Route path='ReduxCounter' element={<ReduxCounter />} />
+          <Route path='TodoWithoutRedux' element={<TodoWithoutRedux />} />
+          <Route path='TodoWithRedux' element={<TodoWithRedux />} />
         </Route>
       </Routes>
     </>

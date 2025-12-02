@@ -2,14 +2,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addText, addUser } from '../../../state/usersSlice';
 import styles from "./AddUsers.module.scss";
 import ListItem from './ListItem';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 const AddText = () => {
 
   const users = useSelector((state) => state.users);
   const dispatch = useDispatch();
 
-  const [newUser, setNewUser] = useState('');
+  // const [newUser, setNewUser] = useState('');
 
   const onAddText = (e) => {
     

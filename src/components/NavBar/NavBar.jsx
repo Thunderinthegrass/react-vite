@@ -24,6 +24,8 @@ const NavBar = (props) => {
         <li><NavLink to={'CustomVideoPlayer'} className={activeClass}>2.3.2 CustomVideoPlayer</NavLink></li>
         <li><NavLink to={'UseMemo'} className={activeClass}>2.4 UseMemo</NavLink></li>
         <li><NavLink to={'ReduxCounter'} className={activeClass}>4.1 ReduxCounter</NavLink></li>
+        <li><NavLink to={'TodoWithoutRedux'} className={activeClass}>4.3 TodoWithoutRedux</NavLink></li>
+        <li><NavLink to={'TodoWithRedux'} className={activeClass}>4.3 TodoWithRedux</NavLink></li>
       </ul>
     </div>
   )
